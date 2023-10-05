@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 3</title>
     <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .gallery {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      .list-item {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border-width: 2px;
+      }
+      .list-item.new::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+      }
+    </style>
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
