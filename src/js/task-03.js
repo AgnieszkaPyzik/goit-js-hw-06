@@ -26,3 +26,4 @@ const templateScript = images
 gallery.insertAdjacentHTML("beforeend", templateScript);
 
 console.log(gallery);
+

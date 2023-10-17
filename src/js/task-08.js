@@ -7,17 +7,9 @@ function handleSubmit(event) {
   const email = form.elements.email.value;
   const password = form.elements.password.value;
   if (email === "" || password === "") {
-    alert("Please fill in all the fields!");
+    return alert("Uzupełnij wszytskie pola!");
   }
-  console.log(`Login: ${email.value}, Password: ${password.value}`);
+  const response = { Login: email.value, Password: password.value };
   form.reset();
+  return console.log(response);
 }
-
-// function handleSubmit(e) {
-//   e.preventDefault();
-//   if (loginForm.email.value.length === 0) {
-//     alert("Pole E-mail nie może być puste!");
-//   } else if (loginForm.password.value.length === 0) {
-//     alert("Pole Hasło nie może być puste!");
-//   }
-// }

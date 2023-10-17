@@ -8,9 +8,10 @@ const ingredients = [
 ];
 
 const listWithId = document.querySelector("#ingredients");
-const list = document.createElement("li");
-list.classList.add("item");
 
-const vegetables = ingredients.map((ingredient) => `${ingredient}`).join(", ");
-
-console.log(vegetables);
+for (const ingredient of ingredients) {
+  const item = document.createElement("li");
+  item.textContent = ingredient;
+  item.classList.add("item");
+  listWithId.append(item);
+}
