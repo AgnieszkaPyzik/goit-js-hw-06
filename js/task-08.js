@@ -9,7 +9,7 @@ function handleSubmit(event) {
   if (email === "" || password === "") {
     return alert("Uzupełnij wszytskie pola!");
   }
-  const response = { Login: email.value, Password: password.value };
+  const response = { Login: email, Password: password };
   form.reset();
   return console.log(response);
 }
